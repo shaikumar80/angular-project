@@ -1,0 +1,18 @@
+{
+  "posts": [
+    {
+      "title": "json-server_4",
+      "author": "typecode_4",
+      "id": 6
+    },
+    {
+      "title": "json2",
+      "author": "typecode2",
+      "id": 7
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

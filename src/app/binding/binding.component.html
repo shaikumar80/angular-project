@@ -1,0 +1,27 @@
+<div>
+    <h1>{{pageTtitle}}</h1>
+    <img src={{imageUrl}}/>
+    <!-- In case of string expression use interpolation (it can only work with string values)-->
+    <button class="btn btn-primary" disabled = {{btnState}}>Click</button>
+
+    <!-- event binding -->
+    <button class="btn btn-primary" (click)="changeTitle()">Change Title</button>
+
+    <!-- style binding -->
+    <h1 [style.color]="hasError ? 'red' : 'green'">Property Binding</h1>
+    <h1 [style.color]="highlightColor">Property Binding</h1>
+    <h1 [ngStyle]="titleStyles">Property Binding</h1>
+
+    <!-- If non-string expression the use property binding -->
+    <img [src]="imageUrl">
+    <button class="btn btn-primary" [disabled] = "btnState">Click</button><br>
+
+    <!-- class binding -->
+    <h4 [class] = "successClass">Class binding</h4>    <!-- class binding overwrites the normal class attribute so better use only one between both --> 
+    <h4 [class.text-danger] = "hasError">Class binding</h4>
+    <h4 [ngClass] = "messageClasses">Class binding</h4>
+    
+    <!-- Two way data binding -->
+    <input type="text" [(ngModel)]="change">
+    <h4>Welocme {{change}}</h4>
+</div>
