@@ -33,7 +33,8 @@ export class BindingComponent implements OnInit {
     "text-success": !this.hasError,
     "text-danger": this.hasError,
     "text-special": this.isSpecial
-  }
+  };
+  check:any;
 
   constructor() { }
 
