@@ -14,8 +14,8 @@
                 <select class="mt-3" formControlName="options" id="">
                     <option *ngFor="let option of optionsList" [value]="option.id">{{option.name}}</option>
                 </select><br>
-                <!-- <button type="button" class="btn btn-primary mt-3">Submit <i
-                        *ngIf="spin" class="fa fa-spinner fa-spin"></i></button> -->
+                <button type="button" class="btn btn-primary mt-3">Submit <i
+                        *ngIf="spin" class="fa fa-spinner fa-spin"></i></button>
                 <button type="button" class="btn btn-primary mt-3" (click)="send(this.userForm.value)">Submit <i
                         *ngIf="spin" class="fa fa-spinner fa-spin"></i></button>
                 <button type="button" class="btn btn-primary mt-3" (click)="update(this.userForm.value)">Update <i
